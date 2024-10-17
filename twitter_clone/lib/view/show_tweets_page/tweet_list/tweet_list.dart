@@ -3,15 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:twitter_clone/model/tweet.dart';
 import 'package:twitter_clone/view/show_tweets_page/tweet_list/tweet_row.dart';
 
+@immutable
 class TweetList extends StatelessWidget {
   final List<Tweet> tweets;
   final Function(int index) onLike;
 
   const TweetList({
-    Key? key,
+    super.key,
     required this.tweets,
     required this.onLike,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../../../model/tweet.dart';
 import '../../../model/external/tc_format.dart';
 
+@immutable
 class TweetRow extends StatelessWidget {
   final Tweet tweet;
   final VoidCallback onLike;
@@ -23,18 +24,18 @@ class TweetRow extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(tweet.content),
-          SizedBox(height: 4),
+          const SizedBox(height: 4),
           Text(
             TcFormat.shared
                 .formatTimestamp(tweet.timestamp), // フォーマットされたタイムスタンプを表示
-            style: TextStyle(color: Colors.grey),
+            style: const TextStyle(color: Colors.grey),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               Text('Likes: ${tweet.likes}'),
               IconButton(
-                icon: Icon(Icons.thumb_up),
+                icon: const Icon(Icons.thumb_up),
                 onPressed: onLike, // いいねボタン
               ),
             ],

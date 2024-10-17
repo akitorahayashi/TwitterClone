@@ -4,7 +4,7 @@ import '../model/tweet.dart';
 class CreatePostPage extends StatefulWidget {
   final Function(Tweet) onTweetPosted;
 
-  CreatePostPage({required this.onTweetPosted});
+  const CreatePostPage({super.key, required this.onTweetPosted});
 
   @override
   State<CreatePostPage> createState() => _CreatePostPageState();

@@ -9,6 +9,7 @@ class TwitterClone extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Twitter Clone',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.cyan),
         useMaterial3: true,
