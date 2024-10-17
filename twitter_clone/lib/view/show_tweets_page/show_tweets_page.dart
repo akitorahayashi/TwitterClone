@@ -4,8 +4,7 @@ import 'package:twitter_clone/view/show_tweets_page/tweet_list/tweet_list.dart';
 import '../../model/tweet.dart';
 
 class ShowTweetsPage extends StatefulWidget {
-  const ShowTweetsPage({super.key, required this.title});
-  final String title;
+  const ShowTweetsPage();
 
   @override
   State<ShowTweetsPage> createState() => _ShowTweetsPageState();
@@ -30,7 +29,7 @@ class _ShowTweetsPageState extends State<ShowTweetsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text("Twitter Clone"),
       ),
       body: TweetList(
         tweets: _tweets,

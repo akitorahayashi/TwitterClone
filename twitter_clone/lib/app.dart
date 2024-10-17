@@ -8,12 +8,12 @@ class TwitterClone extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Twitter Clone',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.cyan),
         useMaterial3: true,
       ),
-      home: const ShowTweetsPage(title: 'Flutter Demo Home Page'),
+      home: const ShowTweetsPage(),
     );
   }
 }
