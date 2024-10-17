@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './view/home_page.dart';
+import 'view/show_tweets_page.dart';
 
 class TwitterClone extends StatelessWidget {
   const TwitterClone({super.key});
@@ -13,7 +13,7 @@ class TwitterClone extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.cyan),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const ShowTweetsPage(title: 'Flutter Demo Home Page'),
     );
   }
 }

@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:twitter_clone/view/create_post_page.dart';
 import '../model/tweet.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class ShowTweetsPage extends StatefulWidget {
+  const ShowTweetsPage({super.key, required this.title});
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<ShowTweetsPage> createState() => _ShowTweetsPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _ShowTweetsPageState extends State<ShowTweetsPage> {
   List<Tweet> _tweets = [];
 
   void _addTweet(Tweet tweet) {
