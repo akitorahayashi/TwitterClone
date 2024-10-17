@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'view/show_tweets_page.dart';
+import 'view/show_tweets_page/show_tweets_page.dart';
 
 class TwitterClone extends StatelessWidget {
   const TwitterClone({super.key});
