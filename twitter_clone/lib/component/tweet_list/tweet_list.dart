@@ -1,7 +1,7 @@
 // tweet_list.dart
 import 'package:flutter/material.dart';
 import 'package:twitter_clone/model/tweet.dart';
-import 'package:twitter_clone/view/show_tweets_page/tweet_list/tweet_row.dart';
+import 'package:twitter_clone/component/tweet_list/tweet_row.dart';
 
 @immutable
 class TweetList extends StatelessWidget {

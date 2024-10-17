@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:twitter_clone/view/create_post_page.dart';
-import 'package:twitter_clone/view/show_tweets_page/tweet_list/tweet_list.dart';
+import 'package:twitter_clone/component/tweet_list/tweet_list.dart';
 import '../../model/tweet.dart';
 
 class ShowTweetsPage extends StatefulWidget {
