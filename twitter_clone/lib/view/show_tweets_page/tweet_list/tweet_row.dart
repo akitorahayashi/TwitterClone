@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../model/tweet.dart';
-import '../../model/external/tc_format.dart';
+import '../../../model/tweet.dart';
+import '../../../model/external/tc_format.dart';
 
 class TweetRow extends StatelessWidget {
   final Tweet tweet;
