@@ -11,20 +11,6 @@ class ShowTweetsPage extends StatefulWidget {
 }
 
 class _ShowTweetsPageState extends State<ShowTweetsPage> {
-  List<Tweet> _tweets = [];
-
-  void _addTweet(Tweet tweet) {
-    setState(() {
-      _tweets.insert(0, tweet); // 新しいツイートを先頭に追加
-    });
-  }
-
-  void _likeTweet(int index) {
-    setState(() {
-      _tweets[index].likes++; // いいね数を増やす
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,7 +18,7 @@ class _ShowTweetsPageState extends State<ShowTweetsPage> {
         title: Text("Twitter Clone"),
       ),
       body: TweetList(
-        tweets: _tweets,
+        tweets: tweets,
         onLike: _likeTweet, // いいね関数を渡す
       ),
       floatingActionButton: FloatingActionButton(

@@ -1,15 +1,15 @@
+List<Tweet> tweets = [];
+
 class Tweet {
-  String content;
-  DateTime timestamp;
   String username;
   String displayName;
-  int likes;
+  String content;
+  DateTime timestamp = DateTime.now();
+  int likes = 0;
 
   Tweet({
-    required this.content,
-    required this.timestamp,
     required this.username,
     required this.displayName,
-    required this.likes,
+    required this.content,
   });
 }
