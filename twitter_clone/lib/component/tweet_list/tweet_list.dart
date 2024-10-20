@@ -21,7 +21,7 @@ class TweetList extends StatelessWidget {
         final tweet = selectedTweets[indexInSelectedTweets];
         return TweetRow(
           tweet: tweet,
-          onLike: () => TcUser.shared
+          onLike: () => TCUser.shared
               .likeATweet(tweet: selectedTweets[indexInSelectedTweets]),
         );
       },

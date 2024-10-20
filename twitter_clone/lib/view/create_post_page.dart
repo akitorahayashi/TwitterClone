@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:twitter_clone/model/tc_user.dart';
-import '../model/tweet.dart';
 
 class CreatePostPage extends StatefulWidget {
   const CreatePostPage({super.key});
@@ -19,9 +18,9 @@ class _CreatePostPageState extends State<CreatePostPage> {
         title: const Text('New Tweet'),
         actions: [
           IconButton(
-            icon: Icon(Icons.send),
+            icon: const Icon(Icons.send),
             onPressed: () {
-              TcUser.shared.postTweet(tweetContent: _controller.text);
+              TCUser.shared.postATweet(tweetContent: _controller.text);
             },
           ),
         ],
@@ -30,7 +29,7 @@ class _CreatePostPageState extends State<CreatePostPage> {
         padding: const EdgeInsets.all(16.0),
         child: TextField(
           controller: _controller,
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
             hintText: 'What\'s happening?',
           ),
           maxLines: 5,
