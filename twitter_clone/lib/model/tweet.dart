@@ -1,4 +1,4 @@
-List<Tweet> tweets = [];
+List<Tweet> globalTweets = [];
 
 class Tweet {
   String username;
