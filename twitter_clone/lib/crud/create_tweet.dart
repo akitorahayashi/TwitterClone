@@ -7,9 +7,10 @@
 import 'package:twitter_clone/model/tweet.dart';
 
 void createTweet({
-  required String userName,
+  required String username,
   required String displayName,
   required String content,
 }) {
-  tweets.insert(Tweet(username: userName,displayName: displayName, content: content))
+  tweets.insert(
+      0, Tweet(username: username, displayName: displayName, content: content));
 }
